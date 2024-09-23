@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body{
+    background-color: #345464;
+    overflow-x: hidden;
+}
+
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+#calculator{
+    margin: auto;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0;
+    border: 2px solid orangered;
+}
+
+.expressionDisplay{
+    color: yellow;
+    text-align: end;
+    height: 50%;
+}
+
+.calculatedDisplay{
+    text-align: end;
+    height: 50%;
+    font-size: 40px;
+    padding-right: 5px;
+}
+
+.button{
+    width: 25%;
+    height: 80px;
+    font-size: 30px;
+}
+
+.button:hover{
+    border: 1px solid white;
+    color: black;
+}
+
+.clear{
+    width: 50%;
+    background-color: rgb(145, 6, 6);
+}
+
+.equal{
+    width: 50%;
+    background-color: rgb(14, 87, 243);
+}
+
+.operand{
+    background-color: rgb(49, 49, 49);
+}
+
+.number{
+    background-color: rgb(138, 138, 138);
+}
+
+#zero{
+    width: 50%;
+}
+
+.display{
+    background-color: black;
+    width: 100%;
+    text-align: end;
+    display: grid;
+    align-items: center;
+    height: 40px;
+    padding-right: 5px;
+}
+
+.answer{
+    color: yellow;
+    font-size: 30px;
+}
+
+footer{
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+}
+
+footer > div{
+    color: #F1F2F3;
+}
+
+@media screen and (max-width: 1000px) {
+    footer{
+        font-size: 12px;
+    }
+}
